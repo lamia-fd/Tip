@@ -1,24 +1,472 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="g0M-w7-xKN">
+                                <rect key="frame" x="0.0" y="25.666666666666686" width="390" height="784.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55.26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiC-ZC-rwY">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="68.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="57"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-9C-8fI">
+                                        <rect key="frame" x="0.0" y="98.333333333333314" width="390" height="91"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-0S-O5r">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-5a-QMy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jkz-nx-aWA">
+                                                        <rect key="frame" x="0.0" y="35.333333333333343" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMQ-ez-MQf">
+                                                        <rect key="frame" x="0.0" y="70.666666666666657" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sFw-uE-foW">
+                                                <rect key="frame" x="136.66666666666666" y="0.0" width="116.66666666666666" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cp-Yo-95O">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38E-ij-KMM">
+                                                        <rect key="frame" x="0.0" y="35.333333333333343" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvN-Xm-mB5">
+                                                        <rect key="frame" x="0.0" y="70.666666666666657" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="z2c-dj-LkP">
+                                                <rect key="frame" x="273.33333333333331" y="0.0" width="116.66666666666669" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHI-WK-LYw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="7" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65R-NN-Fkk">
+                                                        <rect key="frame" x="0.0" y="35.333333333333343" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="8" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ic0-Yv-QvM">
+                                                        <rect key="frame" x="0.0" y="70.666666666666657" width="116.66666666666667" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9S-5m-AHi">
+                                        <rect key="frame" x="0.0" y="219.33333333333334" width="390" height="50.000000000000028"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N7I-9i-HtO">
+                                        <rect key="frame" x="0.0" y="299.33333333333331" width="390" height="284.99999999999994"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mbs-jB-Uzn">
+                                                <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="285"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUw-SF-Zmd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="7">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w8f-Uf-anb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvO-sI-COo">
+                                                        <rect key="frame" x="0.0" y="75" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="4">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKE-O1-emp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-66-tjS">
+                                                        <rect key="frame" x="0.0" y="150" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="1">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlV-on-d4h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dQ-Cq-f3D">
+                                                        <rect key="frame" x="0.0" y="225" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="c">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfB-DF-UoE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VCA-Cd-hKN">
+                                                <rect key="frame" x="136.66666666666666" y="0.0" width="116.66666666666666" height="285"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-gh-O0C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="8">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nlC-dk-Vy9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9m-bC-MM9">
+                                                        <rect key="frame" x="0.0" y="75" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="5">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15K-l8-ayr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27j-ei-iRH">
+                                                        <rect key="frame" x="0.0" y="150" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="2">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jvZ-f1-tY1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYY-Ib-iyV">
+                                                        <rect key="frame" x="0.0" y="225" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="0">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="865-y4-dy1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9B9-zW-URq">
+                                                <rect key="frame" x="273.33333333333331" y="0.0" width="116.66666666666669" height="285"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOL-c5-tI6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="9">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTz-Ys-Fjj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cu5-Gh-zuM">
+                                                        <rect key="frame" x="0.0" y="75" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="6">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jy-zc-fCR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSg-12-l5R">
+                                                        <rect key="frame" x="0.0" y="150" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="3">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5QY-oK-UT5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frz-2p-zaz">
+                                                        <rect key="frame" x="0.0" y="225" width="116.66666666666667" height="60"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="hhhhh">
+                                                            <color key="titleColor" systemColor="systemYellowColor"/>
+                                                        </state>
+                                                        <buttonConfiguration key="configuration" style="plain" buttonSize="large">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content=".">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="26" name="Helvetica-BoldOblique"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="calcluteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DrB-y1-eHy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lz9-ME-n55">
+                                        <rect key="frame" x="0.0" y="614.33333333333337" width="390" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-23-8sa">
+                                        <rect key="frame" x="0.0" y="694.33333333333337" width="390" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top %" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tq0-8F-g3I">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="Tips" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-vH-n4G">
+                                                <rect key="frame" x="164" y="0.0" width="228" height="31"/>
+                                                <connections>
+                                                    <action selector="TipSider:" destination="BYZ-38-t0r" eventType="valueChanged" id="U0R-jP-gY4"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tq0-8F-g3I" firstAttribute="width" secondItem="GTv-23-8sa" secondAttribute="width" multiplier="0.4" id="z9J-Ek-ZbS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ndf-E0-0jR">
+                                        <rect key="frame" x="0.0" y="754.33333333333337" width="390" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group size:1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X47-ct-DZt">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="GroupSize" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Yw-5I-dEO">
+                                                <rect key="frame" x="164" y="0.0" width="228" height="31"/>
+                                                <connections>
+                                                    <action selector="TipSider:" destination="BYZ-38-t0r" eventType="valueChanged" id="NiF-by-5mK"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="X47-ct-DZt" firstAttribute="width" secondItem="Ndf-E0-0jR" secondAttribute="width" multiplier="0.4" id="H4Z-Fz-mE2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ndf-E0-0jR" firstAttribute="leading" secondItem="g0M-w7-xKN" secondAttribute="leading" id="05c-yr-c1l"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ndf-E0-0jR" secondAttribute="trailing" id="4Lu-4D-jht"/>
+                                    <constraint firstItem="GTv-23-8sa" firstAttribute="leading" secondItem="g0M-w7-xKN" secondAttribute="leading" id="Ex8-XF-nbN"/>
+                                    <constraint firstAttribute="trailing" secondItem="GTv-23-8sa" secondAttribute="trailing" id="T6M-Rr-EZa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="g0M-w7-xKN" secondAttribute="trailing" id="1P1-ff-4Ff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g0M-w7-xKN" secondAttribute="bottom" id="PnT-eN-AIq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g0M-w7-xKN" secondAttribute="bottom" id="XaI-Cd-5Kp"/>
+                            <constraint firstItem="g0M-w7-xKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hZn-oN-gBQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="groupLable" destination="X47-ct-DZt" id="Ven-em-LZq"/>
+                        <outlet property="number" destination="HiC-ZC-rwY" id="29o-iz-5I7"/>
+                        <outletCollection property="btns" destination="QUw-SF-Zmd" collectionClass="NSMutableArray" id="ghK-ze-LOu"/>
+                        <outletCollection property="btns" destination="VvO-sI-COo" collectionClass="NSMutableArray" id="Qfa-jl-bXl"/>
+                        <outletCollection property="btns" destination="7TS-66-tjS" collectionClass="NSMutableArray" id="mWC-oQ-d56"/>
+                        <outletCollection property="lables" destination="lbp-5a-QMy" collectionClass="NSMutableArray" id="xuX-cV-luW"/>
+                        <outletCollection property="lables" destination="Jkz-nx-aWA" collectionClass="NSMutableArray" id="RFH-bC-O4I"/>
+                        <outletCollection property="lables" destination="lMQ-ez-MQf" collectionClass="NSMutableArray" id="tLJ-oP-EPQ"/>
+                        <outletCollection property="lables" destination="0cp-Yo-95O" collectionClass="NSMutableArray" id="Gta-Cs-vAZ"/>
+                        <outletCollection property="lables" destination="38E-ij-KMM" collectionClass="NSMutableArray" id="MqB-sP-ig3"/>
+                        <outletCollection property="lables" destination="cvN-Xm-mB5" collectionClass="NSMutableArray" id="YGP-8v-lV3"/>
+                        <outletCollection property="lables" destination="wHI-WK-LYw" collectionClass="NSMutableArray" id="YIh-TM-rgT"/>
+                        <outletCollection property="lables" destination="65R-NN-Fkk" collectionClass="NSMutableArray" id="84r-7d-gic"/>
+                        <outletCollection property="lables" destination="ic0-Yv-QvM" collectionClass="NSMutableArray" id="zDy-F4-c7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6.1538461538461533" y="44.7867298578199"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
